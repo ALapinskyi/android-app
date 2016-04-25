@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sokrates.mobileTeacherAssistent" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sokrates"
+        android:label="@string/app_name_full"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sokrates.mobileTeacherAssistent.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sokrates.mobileTeacherAssistent.activity.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.sokrates.mobileTeacherAssistent.activity.ClassActivity"
+            android:label="@string/title_activity_klasse"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="com.sokrates.mobileTeacherAssistent.activity.ProfileActivity" >
+
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sokrates.mobileTeacherAssistent.activity.ProfileActivity" />
+        </activity>
+        <activity
+            android:name="com.sokrates.mobileTeacherAssistent.activity.PupilActivity"
+            android:label="@string/title_activity_schueler"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="com.sokrates.mobileTeacherAssistent.activity.ClassActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sokrates.mobileTeacherAssistent.activity.ClassActivity" />
+        </activity>
+       <!-- <activity
+            android:name=".activity.ClassPupilActivity"
+            android:label="@string/title_activity_klasse_schueler"
+            android:parentActivityName=".activity.ClassActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ClassActivity" />
+        </activity>-->
+        <activity
+            android:name="com.sokrates.mobileTeacherAssistent.activity.PupiladdressActivity"
+            android:label="@string/title_activity_pupiladdress"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="com.sokrates.mobileTeacherAssistent.activity.PupilActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sokrates.mobileTeacherAssistent.activity.PupilActivity" />
+        </activity>
+        <activity
+            android:name="com.sokrates.mobileTeacherAssistent.activity.SchooladdressActivity"
+            android:label="@string/title_activity_schooladdress"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName="com.sokrates.mobileTeacherAssistent.activity.ProfileActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sokrates.mobileTeacherAssistent.activity.ProfileActivity" />
+        </activity>
+    </application>
+
+</manifest>

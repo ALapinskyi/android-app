@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name_full">Mobile Teacher Assistant</string>
+    <string name="app_name">MTA</string>
+    <string name="title_activity_klasse">Klassen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_schueler">Schülern</string>
+
+    <string name="menu_search_pupils">Search pupil</string>
+    <string name="title_activity_pupiladdress">Adressen</string>
+
+    <string name="context_menu_1">Call number 1</string>
+    <string name="context_menu_2">Enter number 1</string>
+    <string name="context_menu_3">Call number 2 </string>
+    <string name="context_menu_4">Enter number 2</string>
+    <string name="context_menu_5">Show on map</string>
+
+    <string name="dialogButtonOk">Ok</string>
+    <string name="dialogButtonCancel">Cancel</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- Strings related to profile -->
+    <string name="title_activity_profile"></string>
+    <string name="item_klassen">Klassen</string>
+    <string name="item_schuelern">Schülern</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="alphabet">AÄBCDEFGHIJKLMNOÖPQRSTUÜVWXYZ</string>
+
+    <string name="title_activity_schooladdress">Schule Addressen</string>
+
+
+</resources>
